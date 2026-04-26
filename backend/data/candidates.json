@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Chen",
+    "current_role": "Senior Software Engineer",
+    "years_experience": 6,
+    "skills": ["Python", "FastAPI", "React", "AWS", "Docker", "PostgreSQL"],
+    "project": "Architected a high-throughput microservices backend that reduced latency by 40%.",
+    "domain": "Backend",
+    "interest_level": "High"
+  },
+  {
+    "id": 2,
+    "name": "Bob Smith",
+    "current_role": "Data Scientist",
+    "years_experience": 3,
+    "skills": ["Python", "Pandas", "Scikit-learn", "SQL", "Tableau"],
+    "project": "Built a customer churn prediction model with 85% accuracy.",
+    "domain": "Data",
+    "interest_level": "Medium"
+  },
+  {
+    "id": 3,
+    "name": "Charlie Davis",
+    "current_role": "Frontend Developer",
+    "years_experience": 2,
+    "skills": ["HTML", "CSS", "JavaScript", "React", "Redux"],
+    "project": "Redesigned the main company landing page, increasing conversion by 15%.",
+    "domain": "Frontend",
+    "interest_level": "Low"
+  },
+  {
+    "id": 4,
+    "name": "Diana Ross",
+    "current_role": "Full Stack Engineer",
+    "years_experience": 5,
+    "skills": ["JavaScript", "Node.js", "React", "MongoDB", "Express"],
+    "project": "Developed a real-time collaborative code editor.",
+    "domain": "Fullstack",
+    "interest_level": "High"
+  },
+  {
+    "id": 5,
+    "name": "Evan Wright",
+    "current_role": "Machine Learning Engineer",
+    "years_experience": 4,
+    "skills": ["Python", "TensorFlow", "PyTorch", "Kubernetes", "GCP"],
+    "project": "Deployed an LLM-based RAG pipeline for internal document search.",
+    "domain": "ML",
+    "interest_level": "Medium"
+  },
+  {
+    "id": 6,
+    "name": "Fiona Gallagher",
+    "current_role": "Product Manager",
+    "years_experience": 7,
+    "skills": ["Agile", "Scrum", "Jira", "Roadmapping", "A/B Testing"],
+    "project": "Led the launch of a new mobile app that reached 1M users in 6 months.",
+    "domain": "Product",
+    "interest_level": "High"
+  },
+  {
+    "id": 7,
+    "name": "George Miller",
+    "current_role": "Backend Engineer",
+    "years_experience": 1,
+    "skills": ["Java", "Spring Boot", "MySQL"],
+    "project": "Maintained legacy REST APIs and fixed critical bugs.",
+    "domain": "Backend",
+    "interest_level": "Low"
+  },
+  {
+    "id": 8,
+    "name": "Hannah Lee",
+    "current_role": "DevOps Engineer",
+    "years_experience": 5,
+    "skills": ["AWS", "Terraform", "CI/CD", "Linux", "Bash"],
+    "project": "Automated the entire infrastructure provisioning process.",
+    "domain": "Infrastructure",
+    "interest_level": "Medium"
+  },
+  {
+    "id": 9,
+    "name": "Ian Curtis",
+    "current_role": "Software Engineer II",
+    "years_experience": 3,
+    "skills": ["Python", "Django", "Vue.js", "PostgreSQL"],
+    "project": "Built an internal dashboard for the sales team.",
+    "domain": "Fullstack",
+    "interest_level": "High"
+  },
+  {
+    "id": 10,
+    "name": "Julia Roberts",
+    "current_role": "Data Engineer",
+    "years_experience": 4,
+    "skills": ["Python", "Spark", "Airflow", "Snowflake", "AWS"],
+    "project": "Designed a scalable ETL pipeline processing 1TB of data daily.",
+    "domain": "Data",
+    "interest_level": "High"
+  },
+  {
+    "id": 11,
+    "name": "Kevin Hart",
+    "current_role": "UI/UX Designer",
+    "years_experience": 6,
+    "skills": ["Figma", "Sketch", "Prototyping", "User Research"],
+    "project": "Created a unified design system used across all company products.",
+    "domain": "Design",
+    "interest_level": "Medium"
+  },
+  {
+    "id": 12,
+    "name": "Laura Palmer",
+    "current_role": "Senior ML Engineer",
+    "years_experience": 8,
+    "skills": ["Python", "C++", "PyTorch", "CUDA", "Computer Vision"],
+    "project": "Developed a real-time object detection model for autonomous drones.",
+    "domain": "ML",
+    "interest_level": "High"
+  },
+  {
+    "id": 13,
+    "name": "Michael Scott",
+    "current_role": "Engineering Manager",
+    "years_experience": 10,
+    "skills": ["Leadership", "System Design", "Agile", "Python"],
+    "project": "Managed a team of 15 engineers and delivered a major platform rewrite.",
+    "domain": "Management",
+    "interest_level": "Low"
+  },
+  {
+    "id": 14,
+    "name": "Nina Simone",
+    "current_role": "Junior Data Scientist",
+    "years_experience": 1,
+    "skills": ["Python", "Pandas", "Matplotlib", "SQL"],
+    "project": "Analyzed customer behavior data to identify cross-selling opportunities.",
+    "domain": "Data",
+    "interest_level": "Medium"
+  },
+  {
+    "id": 15,
+    "name": "Oscar Isaac",
+    "current_role": "Security Engineer",
+    "years_experience": 5,
+    "skills": ["Penetration Testing", "Python", "AWS Security", "Cryptography"],
+    "project": "Discovered and patched a critical vulnerability in the payment gateway.",
+    "domain": "Security",
+    "interest_level": "High"
+  },
+  {
+    "id": 16,
+    "name": "Pam Beesly",
+    "current_role": "Frontend Architect",
+    "years_experience": 7,
+    "skills": ["JavaScript", "TypeScript", "React", "Next.js", "GraphQL"],
+    "project": "Migrated a monolithic frontend to a micro-frontend architecture.",
+    "domain": "Frontend",
+    "interest_level": "High"
+  },
+  {
+    "id": 17,
+    "name": "Quentin Tarantino",
+    "current_role": "Backend Developer",
+    "years_experience": 2,
+    "skills": ["Go", "gRPC", "PostgreSQL", "Docker"],
+    "project": "Rewrote a slow Python microservice in Go, improving performance by 5x.",
+    "domain": "Backend",
+    "interest_level": "Low"
+  },
+  {
+    "id": 18,
+    "name": "Rachel Green",
+    "current_role": "Product Designer",
+    "years_experience": 4,
+    "skills": ["Figma", "UI/UX", "Wireframing"],
+    "project": "Redesigned the checkout flow, reducing cart abandonment by 20%.",
+    "domain": "Design",
+    "interest_level": "Medium"
+  },
+  {
+    "id": 19,
+    "name": "Steve Jobs",
+    "current_role": "Visionary Product Manager",
+    "years_experience": 15,
+    "skills": ["Product Strategy", "Design Thinking", "Marketing", "Leadership"],
+    "project": "Launched a revolutionary new hardware product.",
+    "domain": "Product",
+    "interest_level": "Low"
+  },
+  {
+    "id": 20,
+    "name": "Tina Fey",
+    "current_role": "Full Stack Developer",
+    "years_experience": 3,
+    "skills": ["Ruby on Rails", "JavaScript", "React", "PostgreSQL"],
+    "project": "Built a scalable e-commerce backend and administrative dashboard.",
+    "domain": "Fullstack",
+    "interest_level": "High"
+  }
+]
