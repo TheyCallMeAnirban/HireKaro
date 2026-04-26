@@ -10,3 +10,5 @@ slowapi
 sentry-sdk[fastapi]
 numpy
 pymongo
+PyJWT
+bcrypt
