@@ -16,6 +16,7 @@ import io
 import os
 import csv
 import asyncio
+import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from contextlib import asynccontextmanager
 
@@ -77,8 +78,20 @@ ALLOWED_ORIGINS = [
 # Force the Vercel domain to always be allowed, regardless of Render env vars
 ALLOWED_ORIGINS.append("https://hire-karo.vercel.app")
 
-# ── Startup ───────────────────────────────────────────────────────────────────
+# ── Startup & Keep-Awake ──────────────────────────────────────────────────────
 CANDIDATES: list = []
+
+async def keep_awake():
+    """Ping the server's own public URL every 10 minutes to prevent Render from sleeping."""
+    url = "https://hirekaro.onrender.com/health"
+    while True:
+        await asyncio.sleep(600)  # 10 minutes
+        try:
+            loop = asyncio.get_running_loop()
+            await loop.run_in_executor(None, urllib.request.urlopen, url)
+            log.info("keep_awake.ping")
+        except Exception as e:
+            log.warning("keep_awake.failed", extra={"error": str(e)})
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -99,7 +112,12 @@ async def lifespan(app: FastAPI):
 
     init_db()
     log.info("startup.complete", extra={"candidates": len(CANDIDATES)})
+    
+    # Start the keep-awake pinger
+    pinger_task = asyncio.create_task(keep_awake())
+    
     yield
+    pinger_task.cancel()
     _executor.shutdown(wait=False)
 
 app = FastAPI(title="HireKaro AI Talent API", version="3.0.0", lifespan=lifespan)
