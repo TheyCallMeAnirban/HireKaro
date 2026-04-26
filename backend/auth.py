@@ -113,6 +113,15 @@ def login_user(email: str, password: str) -> dict:
     if not user_doc or not verify_password(password, user_doc["password_hash"]):
         raise HTTPException(status_code=401, detail="Invalid email or password.")
         
+    # Update login tracking in MongoDB
+    users_collection.update_one(
+        {"_id": user_doc["_id"]},
+        {
+            "$set": {"last_login_at": datetime.utcnow().isoformat()},
+            "$inc": {"login_count": 1}
+        }
+    )
+        
     uid = str(user_doc["_id"])
     token = create_token(uid, user_doc["email"], user_doc["role"])
     log.info("auth.login", extra={"user_id": uid})
