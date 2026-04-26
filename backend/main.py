@@ -71,7 +71,7 @@ async def _verify_key(api_key: str = Security(_API_KEY_HEADER)):
 
 ALLOWED_ORIGINS = [
     o.strip() for o in
-    os.getenv("ALLOWED_ORIGINS", "http://localhost:3000,http://127.0.0.1:3000").split(",")
+    os.getenv("ALLOWED_ORIGINS", "http://localhost:3000,http://127.0.0.1:3000,https://hire-karo.vercel.app").split(",")
     if o.strip()
 ]
 
