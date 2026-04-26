@@ -10,7 +10,7 @@ import type {
   UploadResumeResponse,
 } from './types';
 
-const BASE    = '/api';
+const BASE    = 'https://hirekaro.onrender.com';
 const API_KEY = (import.meta as any).env?.VITE_API_KEY as string | undefined;
 
 // Auth token stored in localStorage
